@@ -26,10 +26,12 @@ export class NotesComponent implements OnInit {
       this.noteService.addNote(title, content);
       this.notes = this.noteService.getNotes(); // Update the notes list
     }
+    console.log(this.notes);
   }
 
   deleteNote(id: number): void {
     this.noteService.deleteNote(id);
     this.notes = this.noteService.getNotes(); // Update the notes list
+    console.log(this.notes);
   }
 }
