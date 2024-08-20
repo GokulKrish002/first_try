@@ -1,0 +1,11 @@
+<div>
+    <button (click)="addNote()">Add Note</button>
+    <ul>
+      <li *ngFor="let note of notes">
+        <h3>{{ note.title }}</h3>
+        <p>{{ note.content }}</p>
+        <button (click)="deleteNote(note.id)">Delete</button>
+      </li>
+    </ul>
+  </div>
+  
